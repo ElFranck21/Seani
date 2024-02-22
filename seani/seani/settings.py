@@ -12,6 +12,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+import os
+from dotenv import load_dotenv
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -131,3 +139,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT= BASE_DIR / 'media'
+
+cloudinary.config( 
+  cloud_name = str(os.environ.get('CLOUD_NAME')), 
+  api_key = str(os.environ.get('API_KEY')), 
+  api_secret = str(os.environ.get('API_SECRET')),
+  secure = True
+)
