@@ -41,6 +41,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'library.apps.LibraryConfig',
     'career.apps.CareerConfig',
+    'exam.apps.ExamConfig',
     
     'django.contrib.admin',
     'django.contrib.auth',
