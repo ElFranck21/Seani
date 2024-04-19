@@ -1,0 +1,83 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    background-color: beige;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.cart{
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    box-shadow: 0px 0px 3px 4px rgb(0, 104, 0);
+}
+
+.cart input[type="text"],
+.cart input[type="password"] {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    
+.cart form input[type="submit"] {
+        border: none;
+        width: 50%;
+        max-width: 180px;
+        height: 50px;
+        margin-top: 10px;
+        background-color: #3498db;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+   
+    
+    /* CSS */
+    .button-73 {
+      appearance: none;
+      background-color: #FFFFFF;
+      border-radius: 40em;
+      border-style: none;
+      box-shadow: #ADCFFF 0 -12px 6px inset;
+      box-sizing: border-box;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system,sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.24px;
+      margin: 0;
+      outline: none;
+      padding: 1rem 1.3rem;
+      quotes: auto;
+      text-align: center;
+      text-decoration: none;
+      transition: all .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-73:hover {
+      background-color: #FFC229;
+      box-shadow: #FF6314 0 -6px 8px inset;
+      transform: scale(1.125);
+    }
+    
+    .button-73:active {
+      transform: scale(1.025);
+    }
+    
+    @media (min-width: 768px) {
+      .button-73 {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+      }
+    }

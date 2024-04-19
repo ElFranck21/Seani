@@ -1,3 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Home {{ user }}{% endblock %}
+
+{% block content %}
+    
+
+    
 <h1>Bienvenido {{ user.username }} </h1>
 
 <h2>Examen de {{user.first_name}} {{ user.last_name }} </h2>
@@ -20,3 +27,4 @@
     <input type="submit" value="salir">
 
 </form>
+{% endblock  %}

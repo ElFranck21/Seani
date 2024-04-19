@@ -1,2 +1,15 @@
-<h1>Bienvenido a Seani2024</h1>
-<a href="{% url 'login' %}">Ingresar</a>
+{% extends "base.html" %} 
+
+{% block title %}Bienvenido{% endblock  %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% block content %}
+
+<center><img src="https://www.uttlaxcala.edu.mx/images/Logo_utt_oficial_2021_2022.png" width="1000px" height="360px"></center>
+
+
+<center><h1>Bienvenido a Seani2024</h1>
+<button class="button-73" role="button"><a href="{% url 'login' %}">Ingresar</a></button>
+
+</center>
+{% endblock  %}
